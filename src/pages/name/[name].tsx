@@ -44,7 +44,7 @@ export default function PokemonByNamePage({ pokemon }: Props) {
   }
 
   return (
-    <Layout>
+    <Layout title={pokemon.name}>
       <Grid.Container css={{marginTop: '5px'}} gap={2}>
         <Grid xs={12}
           css={{'@xsMax': {flexDirection: 'column'}, '@smMax': {flexDirection: 'column'}}}

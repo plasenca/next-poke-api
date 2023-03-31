@@ -12,8 +12,6 @@ const origin = typeof window !== 'undefined' ? window.location.origin : 'http://
 
 export const Layout: FC<HeaderProps> = ({children, title}) => {
 
-  
-
   const stringToTitle = (str: string | undefined) => {
     if (!str) return str;
     return str.replace(/\w\S*/g, (txt) => {
