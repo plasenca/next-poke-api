@@ -8,7 +8,7 @@ interface HeaderProps {
   children?: React.ReactNode,
 }
 
-const origin = (typeof window !== 'undefined' && window.location.origin) || 'http://localhost:3000';
+const origin = typeof window !== 'undefined' ? window.location.origin : 'http://localhost:3000';
 
 export const Layout: FC<HeaderProps> = ({children, title}) => {
 
